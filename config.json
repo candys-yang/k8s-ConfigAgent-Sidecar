@@ -1,0 +1,18 @@
+{
+    "appname": "appname",
+    "etcd":{
+        "host": ["195.168.0.222:2379"],
+        "user": "root", 
+        "pwd": "root", 
+        "root": "/test"
+    },
+    "config":{
+        "item":{
+            "test:LOCALREDIS": "redis://127.0.0.1:6379/0",
+            "test:REMOTEREDIS": "redis://195.168.0.21:6379/0"
+        },
+        "etcdmap":{
+            "TOKENKEY": "test:TOKENKEY"
+        }
+    }
+}
